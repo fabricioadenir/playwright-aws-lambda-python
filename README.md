@@ -4,3 +4,12 @@
 
 - A lib pyppeteer que fará o download do chrme mas o default dela é uma versão mais antiga do navegador.
 Por isso que definimos a variável de ambiente com a versão aceita pelo playwright PYPPETEER_CHROMIUM_REVISION 
+
+# Rodar local.
+```
+functions-framework --target print_tela_google
+```
+# Fazer deploy.
+```
+gcloud beta functions deploy print_tela_google --runtime python38 --trigger-http --memory=1GB --timeout=540s --allow-unauthenticated
+```
